@@ -1,6 +1,6 @@
 # Zsh on Dotfiles
 
-[kazu914さん](https://github.com/kazu914)の[記事](https://zenn.dev/k4zu/articles/zsh-tutorial)を参考にさせていただきました。
+![dotfiles](https://user-images.githubusercontent.com/61341108/173212058-3290ef1b-23cc-4f79-817a-1f74f74f688a.png)
 
 This repo includes Dotfiles for
 
@@ -11,37 +11,26 @@ This repo includes Dotfiles for
 
 ## Usage
 
-1. install zsh.
-2. set up to use as a login shell. 
-3. set initial settings.
-4. set Dotfiles. 
-  > Dotfiles is basically a 1: Put all the files you want to manage in one directory. 
-2: Make them manageable with git. 3: Write a script to put the configuration files in place.
-5. place a symbolic link to ``dotfiles/.zshrc`` in home dir. 
-6. make it manageable via git.
-7. install zinit. 
-``bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"``
-8. install NerdFont and Starship.
-9. install bat.
-
-
-## Setup
-
 ```bash
 # Clone this repo
 git clone https://github.com/sakanafuto/dotfiles
 
-# Move to the repository
-mv dotfiles ~
-
-# Initialize some additional packages
+# Initialize zsh, tmux and git packages
 make set
 
 source ~/.zshrc
+
+# If you want to clean some packages
+make clean
 ```
+
+## Note
+
+[kazu914さん](https://github.com/kazu914)の[リポジトリ](https://github.com/kazu914/dotfiles)を参考に作成させていただきました。
+自分の開発環境やディレクトリ構造を見直すいい機会になりました。
 
 ## Reference
 
+- [zsh(+ dotfiles)入門](https://zenn.dev/k4zu/articles/zsh-tutorial)
 - [zdharma-continuum/zinit](https://github.com/zdharma-continuum/zinit#introduction)
 - [starship](https://starship.rs/ja-jp/guide/)
-- [sharkdp/bat](https://github.com/sharkdp/bat/releases)
