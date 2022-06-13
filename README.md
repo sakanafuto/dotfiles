@@ -9,7 +9,11 @@ This repo includes Dotfiles for
 - ``git``
 
 
-## Usage
+## Getting Started
+
+First install services and packages as needed, such as zsh and tmux etc.
+
+### Installation
 
 ```bash
 # Clone this repo
@@ -26,8 +30,8 @@ make clean
 
 ## Note
 
-[kazu914さん](https://github.com/kazu914)の[リポジトリ](https://github.com/kazu914/dotfiles)を参考に作成させていただきました。
-自分の開発環境やディレクトリ構造を見直すいい機会になりました。
+I have created this file based on [kazu914](https://github.com/kazu914)'s [repository](https://github.com/kazu914/dotfiles). Thanks to him, I was able to create good.
+That was good opportunity for me to review my dev environment and directory structure.
 
 ## Reference
 
