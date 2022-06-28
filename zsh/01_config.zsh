@@ -15,9 +15,13 @@ eval "$(rbenv init -)"
 # TypeScript
 export PATH=$HOME/.nodebrew/node/v15.9.0/bin:$PATH
 
-# Nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Flutter
+export PATH=$HOME/Workspace/flutter/bin:$PATH
 
 
 ################################ HISTORY #################################
