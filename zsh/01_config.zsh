@@ -2,11 +2,11 @@
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# Python
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
+# python
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init --path)"
 
 # Ruby
 export PATH=$HOME/.rbenv/shims:/usr/local/bin:$PATH
@@ -22,6 +22,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Flutter
 export PATH=$HOME/Workspace/flutter/bin:$PATH
+
+# flutterfire_cli
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
 ################################ HISTORY #################################
