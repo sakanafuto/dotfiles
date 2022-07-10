@@ -1,31 +1,27 @@
 ################################# EXPORT #################################
-# mysql
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
 
-# python
-export PATH="/usr/local/opt/python@3.10/bin:$PATH"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PATH:$PYENV_ROOT/bin
 eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # Ruby
 export PATH=$HOME/.rbenv/shims:/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 
-# TypeScript
-export PATH=$HOME/.nodebrew/node/v15.9.0/bin:$PATH
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Flutter
-export PATH=$HOME/Workspace/flutter/bin:$PATH
+export PATH=$HOME/flutter/bin:$PATH
 
-# flutterfire_cli
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
+#flutterfire_cli
+export PATH=$PATH:$HOME/.pub-cache/bin
 
 ################################ HISTORY #################################
 # history
@@ -39,8 +35,6 @@ setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt hist_ignore_space
-
-
 
 ############################### COMPLEMENT ################################
 # cd [TAB] で以前移動したディレクトリを表示
@@ -60,8 +54,6 @@ setopt auto_pushd
 
 # コマンドのspell訂正
 setopt correct
-
-
 
 #################################  OTHERS  #################################
 # キーバインディングを emacs 風に
