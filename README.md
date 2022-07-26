@@ -20,6 +20,8 @@ First install services and packages as needed, such as zsh and tmux etc.
 git clone https://github.com/sakanafuto/dotfiles
 
 # Install some tools
+brew install tmux
+brew install bat
 brew install starship
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
@@ -27,6 +29,11 @@ bash -c "$(curl --fail --show-error --silent --location https://raw.githubuserco
 make set
 
 source ~/.zshrc
+
+# Reflect tmux config
+tmux 
+[prefix] + r  
+[prefix] + I  # reflect plugin
 
 # If you want to clean some packages
 make clean
