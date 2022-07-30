@@ -11,7 +11,7 @@ This repo includes Dotfiles for
 
 ## Getting Started
 
-First install services and packages as needed, such as zsh and tmux etc.
+First install services and packages as needed, such as tmux and Nerd Fonts etc.
 
 ### Installation
 
