@@ -1,4 +1,4 @@
-# Zsh on Dotfiles
+# 7ofu's Dotfiles
 
 ![dotfiles](https://user-images.githubusercontent.com/61341108/173212058-3290ef1b-23cc-4f79-817a-1f74f74f688a.png)
 
