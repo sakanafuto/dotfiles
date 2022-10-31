@@ -1,29 +1,19 @@
 [init]
-		defaultBranch = main
+defaultBranch = main
 [push]
-		default = current
+default = current
 [color]
-		ui = auto
+ui = auto
 [color "branch"]
-		current = green bold
-		local = green
-		remote = red bold
+current = green bold
+local = green
+remote = red bold
 [color "diff"]
-		meta = yellow bold
-		frag = magenta bold
-		old = red bold
-		new = green bold
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
 [color "status"]
-		added = green bold
-		changed = yellow bold
-		untracked = red
-[alias]
-		st = status --short --branch
-		df = diff
-[delta]
-		features = side-by-side line-numbers decorations
-		whitespace-error-style = 22 reverse
-[delta "decorations"]
-		commit-decoration-style = bold yellow box ul
-		file-style = bold yellow ul
-		file-decoration-style = none
+added = green bold
+changed = yellow bold
+untracked = red
