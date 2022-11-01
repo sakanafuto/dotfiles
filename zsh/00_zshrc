@@ -19,15 +19,7 @@ for file in $SCRIPT_DIR/zsh/enabled/*.zsh; do
 done
 
 if [ -e $HOME/.zshrc.local ]; then
-	source $HOME/.zshrc.local 
+	source $HOME/.zshrc.local
 fi
 
 eval "$(starship init zsh)"
-
-if [ $SHLVL = 1 ]; then
-	tmux new -s works
-fi
-
-if [ -z "$TMUX" ]; then
-	tmux attach -t works
-fi

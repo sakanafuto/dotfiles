@@ -8,10 +8,6 @@ zinit light starship/starship
 zinit ice wait lucid
 zinit light zdharma-continuum/fast-syntax-highlighting
 
-#auto suggest
-zinit light zsh-users/zsh-autosuggestions
-bindkey '^k' autosuggest-accept
-
 # bat
 zinit ice wait lucid as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zinit light sharkdp/bat
