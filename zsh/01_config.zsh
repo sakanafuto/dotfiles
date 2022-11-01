@@ -1,4 +1,10 @@
 ################################# EXPORT #################################
+# FVM
+export PATH="$PATH:$HOME/fvm/default/bin"
+
+#flutterfire_cli
+export PATH=$PATH:$HOME/.pub-cache/bin
+
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 
@@ -10,46 +16,20 @@ eval "$(pyenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Flutter
-export PATH=$HOME/flutter/bin:$PATH
+# rbenv
+eval "$(rbenv init - zsh)"
 
-#flutterfire_cli
-export PATH=$PATH:$HOME/.pub-cache/bin
+# Pods
+export LANG=en_US.UTF-8
 
 ################################ HISTORY #################################
 # history
 HISTFILE=$HOME/.zsh_history
-HISTSIZE=100000
-SAVEHIST=1000000
-
-# share .zshhistory
-setopt inc_append_history
-setopt share_history
-setopt hist_ignore_all_dups
-setopt hist_reduce_blanks
-setopt hist_ignore_space
-
-############################### COMPLEMENT ################################
-# cd [TAB] で以前移動したディレクトリを表示
-setopt auto_pushd
-
-# zsh-completions
-autoload -U compinit && compinit -u
-
-# 補完で小文字でも大文字にマッチさせる
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-# [TAB] でパス名の補完候補を表示したあとのパス選択
-zstyle ':completion:*:default' menu select=1
-
-# cd [TAB] で directory stockに追加し、選択
-setopt auto_pushd
-
-# コマンドのspell訂正
-setopt correct
+HISTSIZE=10000
+SAVEHIST=100000
 
 #################################  OTHERS  #################################
 # キーバインディングを emacs 風に
@@ -57,6 +37,3 @@ bindkey -e
 
 # Enable to display Japanese file names
 setopt print_eight_bit
-
-# 色を使用出来るようにする
-autoload -Uz colors
