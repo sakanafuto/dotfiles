@@ -8,10 +8,6 @@ export PATH=$PATH:$PYENV_ROOT/bin
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
-# Ruby
-export PATH=$HOME/.rbenv/shims:/usr/local/bin:$PATH
-eval "$(rbenv init -)"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
