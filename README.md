@@ -21,10 +21,11 @@ git clone https://github.com/sakanafuto/dotfiles
 # Install some tools
 brew install bat
 brew install starship
+brew install exa
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # Initialize zsh, tmux and git packages
-make set
+cd ~/dotfiles && make set
 
 source ~/.zshrc
 
