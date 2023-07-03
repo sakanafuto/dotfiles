@@ -15,9 +15,6 @@ alias ojt="oj t -c \"python3 main.py\" -d ./tests/"
 alias py="python3 main.py"
 alias submit="acc submit main.py"
 
-# Python2.x廃止の対策
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-
 ################################# git #################################
 alias ga="git add"
 alias gc="git commit"

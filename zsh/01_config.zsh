@@ -8,12 +8,6 @@ export PATH=$PATH:$HOME/.pub-cache/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 
-# pyenv
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PATH:$PYENV_ROOT/bin
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

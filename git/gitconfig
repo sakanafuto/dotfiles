@@ -1,19 +1,24 @@
 [init]
-defaultBranch = main
+    defaultBranch = main
+[user]
+    # name = <your name>
+    # email = <your email>
 [push]
-default = current
+    default = current
 [color]
-ui = auto
+    ui = auto
 [color "branch"]
-current = green bold
-local = green
-remote = red bold
+    current = green bold
+    local = green
+    remote = red bold
 [color "diff"]
-meta = yellow bold
-frag = magenta bold
-old = red bold
-new = green bold
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
 [color "status"]
-added = green bold
-changed = yellow bold
-untracked = red
+    added = green bold
+    changed = yellow bold
+    untracked = red
+[core]
+    vim
