@@ -10,11 +10,6 @@ alias ll='exa -aahl --icons --git'
 alias lt='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
 alias l='clear && ls'
 
-############################### AtCoder ###############################
-alias ojt="oj t -c \"python3 main.py\" -d ./tests/"
-alias py="python3 main.py"
-alias submit="acc submit main.py"
-
 ################################# git #################################
 alias ga="git add"
 alias gc="git commit"
